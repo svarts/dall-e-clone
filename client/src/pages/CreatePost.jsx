@@ -20,8 +20,8 @@ const CreatePost = () => {
   return (
     <section className='max-w-7xl mx-auto '>
       <div>
-        <h1 className='font-normal text-gray-800 text-[32px]'>The Community Showcase</h1>
-        <p className='mt-2 text-[#666e75] text-[14px] max-w-[500px]'>Create imaginative and visually stunning images through DALL-E AI and share them with the community</p>
+        <h1 className='font-normal text-[52px] from-yellow-200 via-purple-400 to-cyan-400 bg-gradient-to-r bg-clip-text text-transparent'>The Community Showcase</h1>
+        <p className='mt-5 text-[#dfdfdf] text-[16px] max-w-[500px]'>Create imaginative and visually stunning images through DALL-E AI and share them with the community</p>
       </div>
       <form className='mt-16 max-w-3xl' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-5'>

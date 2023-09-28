@@ -13,7 +13,7 @@ const FormField = ({labelName, type, name, placeholder, value, handleChange, isS
                 <button
                     type="button"
                     onClick={handleSurpriseMe}
-                    className="font-semibold text-xs bg-[#EcECF1] py-1 px-2 rounded-[5px] text-black"
+                    className="font-semibold text-xs bg-[#EcECF1] py-1 px-2 rounded-[5px] text-white"
                 >
                     Surprise me
                 </button>
@@ -23,7 +23,7 @@ const FormField = ({labelName, type, name, placeholder, value, handleChange, isS
             type={type}
             id={name}
             name={name}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#64697f] focus:border-[#64698f] outline-none block w-full p-3"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#ba6bff] focus:border-[#ba6bff] outline-none block w-full p-3"
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
