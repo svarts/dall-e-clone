@@ -6,6 +6,9 @@ body{
   background:black;
   font-family: 'Inter', sans-serif;
 }
+label-text{
+  color: #ffffff !important;
+}
 .gradient-bg {
   background-image: linear-gradient(to right, #fff27d, #c97dff, #6ffdff);
 }

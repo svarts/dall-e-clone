@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import logo from './assets/logo.svg';
-import { Home, CreatePost, XYZLoader } from './pages';
+import { Home, CreatePost } from './pages';
 
 const App = () => (
     <BrowserRouter>
@@ -16,7 +16,6 @@ const App = () => (
                 <Route path="/" element={<Home />} />
                 <Route path="/create-post" element={<CreatePost />} />
             </Routes>
-            <XYZLoader />
         </main>
     </BrowserRouter>
 );
