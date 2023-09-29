@@ -12,6 +12,9 @@ label-text{
 .gradient-bg {
   background-image: linear-gradient(to right, #fff27d, #c97dff, #6ffdff);
 }
+.gradient-border{ 
+  border: 3px solid linear-gradient(to right, #fff27d, #c97dff, #6ffdff);
+}
 .prompt::-webkit-scrollbar {
   width: 5px;
 }

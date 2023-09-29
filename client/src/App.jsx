@@ -9,7 +9,7 @@ const App = () => (
             <Link to="/">
                 <img src={logo} alt="logo" className="w-28 object-contain" />
             </Link>
-            <Link to="/create-post" className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md">Create</Link>
+            <Link to="/create-post" className="font-inter font-medium text-white bg-gradient-to-r from-indigo-300 via-indigo-500 to-indigo-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 shadow-lg shadow-indigo-500/50 dark:shadow-lg dark:shadow-indigo-800/80 px-4 py-2 rounded-md">Create</Link>
         </header>
         <main className="sm:p-8 px-4 py-8 w-full bg-[#000000] min-h-[calc(100vh-73px)]">
             <Routes>
