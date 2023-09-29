@@ -15,8 +15,16 @@ const CreatePost = () => {
   const [loading, setLoading] = useState(false);
   const generateImage = () => { }
   const handleSubmit = () => { }
-  const handleChange = (e) => { }
-  const handleSurpriseMe = () => { }
+  const handleChange = (e) => { 
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  }
+  const handleSurpriseMe = () => { 
+    const randomPrompt = getRandomPrompt(form.prompt);
+    setForm({...form, prompt: randomPrompt})
+  }
 
   return (
     <section className='max-w-7xl mx-auto '>
@@ -27,7 +35,14 @@ const CreatePost = () => {
       <form className='mt-16 max-w-3xl' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-5'>
           <FormField
-            labelName='Your Name'
+            labelName={
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-100 custom-label"
+              >
+                Your Name
+              </label>
+            }
             type='text'
             name='name'
             placeholder='Enter your name'
@@ -35,13 +50,20 @@ const CreatePost = () => {
             handleChange={handleChange}
           />
           <FormField
-            labelName='Prompt'
+            labelName={
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-100 custom-label"
+              >
+                Prompt
+              </label>
+            }
             type='text'
             name='prompt'
             placeholder='teddy bears shopping for groceries in Japan, ukiyo-e'
             value={form.prompt}
             handleChange={handleChange}
-            isSupriseMe
+            isSurpriseMe={true}
             handleSurpriseMe={handleSurpriseMe}
           />
           <div className='relative bg-gray-950 border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 h-64 p-3 flex justify-center items-center'>
